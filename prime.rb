@@ -1,4 +1,9 @@
 def prime(integer)
-(2..integer).collect {|x|(integer % x)==0}
-true
+if (2..integer).collect do |x|
+  (integer % x)==0
+false
+end
+else
+  true
+end
 end
