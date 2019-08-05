@@ -1,8 +1,10 @@
 def prime?(integer)
 if integer<2
   return false
-else
-(2..integer).all?{|x|(integer % x)==0}
+elsif
+(2..integer).none?{|x|(integer % x)==0}
 return true
+else
+  return false
 end
 end
