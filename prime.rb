@@ -1,4 +1,8 @@
 def prime?(integer)
-return false if integer<2
-return true if (2..integer).all?{|x|(integer % x)==0}
+if integer<2
+  return false
+else
+(2..integer).all?{|x|(integer % x)==0}
+return true
+end
 end
